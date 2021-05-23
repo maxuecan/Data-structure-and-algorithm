@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="module">
+		const { log } = console
+		import HashTable from './HashTable.js'
+		log(HashTable)
+		
+		const hash = new HashTable()
+		hash.put('Gandalf', 'gandalf@email.com')
+		hash.put('John', 'john@email.com')
+		hash.put('Tyrion', 'tyrion@email.com')
+		hash.put('test', {
+			a: 1,
+			b: 2
+		})
+		log(hash.get('John'))
+		log(hash.remove('test'))
+		log(hash)
+	</script>
+</html>
