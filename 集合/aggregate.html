@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="aggregate.js"></script>
+	</head>
+	<body>
+	</body>
+	<script>
+		const { log } = console
+		var set = new Set();
+		log(set.add(1))
+		log(set.add(2))
+		log(set.add(1))
+		log(set.delete(1))
+		console.log(set)
+		// console.log(set)
+		var obj = {
+			a: "1",
+			b: "2",
+		}
+		// var a = '1'
+		// console.log(Object.prototype.hasOwnProperty.call(obj, a))
+		console.log(Object.values(obj))
+	</script>
+</html>
