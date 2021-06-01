@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="index.js"></script>
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		var deques = new deque();
+		console.log(deques);
+		deques.addFront("Jack");
+		deques.addFront("Jhon");
+		console.log(deques)
+		deques.addBack("Liai");
+		console.log(deques);
+		console.log(deques.isEmpty());
+		console.log(deques.size());
+		console.log(deques.peekFront());
+		console.log(deques.peekBack());
+		console.log(deques.toString());
+		deques.removeFront();
+		console.log(deques)
+		deques.addFront("Post");
+		console.log(deques);
+		deques.removeBack();
+		console.log(deques)
+	</script>
+</html>
