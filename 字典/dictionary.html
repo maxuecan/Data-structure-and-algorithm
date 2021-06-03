@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- <script src="./dictionary.js"></script> -->
+	</head>
+	<body>
+	</body>
+	<script type="module">
+		// import * as Dictionary from './dictionary.js'
+		let { log } = console
+		import Dictionary from './dictionary.js'
+		// log(Dictionary)
+		const dictionary = new Dictionary()
+		log(dictionary)
+		dictionary.set('Gandalf', 'gandalf@email.com')
+		dictionary.set('John', 'John@email.com')
+		dictionary.set('Tyrion', 'Tyrion@email.com')
+		dictionary.set('Obj', {
+			a: 1,
+			b: 2
+		})
+		dictionary.set('')
+		log(dictionary)
+		log(dictionary.hasKey('John'))
+		log(dictionary.hasKey('test'))
+		log(dictionary.get('John'))
+		log(dictionary.get('test'))
+		log(dictionary.keyValues())
+		log(dictionary.keys())
+		log(dictionary.values())
+		log(dictionary.remove('John'))
+		log(dictionary)
+		// log(dictionary.forEach())
+		dictionary.forEach((k,v) => {
+			log('forEach', `key: ${k}, value: ${v}`)
+		})
+		log(dictionary.isEmpty())
+		log(dictionary.toString())
+		log(dictionary.size())
+		
+		// let obj = {
+		// 	a: 1,
+		// 	b: 2
+		// }
+		// console.log(obj['a'].toString())
+	</script>
+</html>
